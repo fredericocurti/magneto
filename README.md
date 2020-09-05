@@ -19,7 +19,7 @@ To install the Windows desktop client, download and run the **MagnetoSetup.msi**
 
 ### Chrome Extension
 You can either:
-- Drag and drop the Extension folder into the *chrome://extensions* page with developer mode turned on
+- Drag and drop the Extension folder or **Extension.crx** (from latest release) into the *chrome://extensions* page with developer mode turned on
 
 OR
 
