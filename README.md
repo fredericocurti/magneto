@@ -19,7 +19,6 @@ OR
 
 - Wait for it to be approved on Chrome Web Store, I will share a link asap.
 ___
-
 ## Usage
 With all prerequisites installed, using it should be as simple as right clicking on a *magnet* link on Chrome, choosing the **🧲 Stream with Magneto** option and click **Open Magneto** on the popup. This should open both a command prompt with the streaming URL and VLC.
 
