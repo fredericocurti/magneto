@@ -1,3 +1,5 @@
 .vs
 **/.vs
 .vs/
+**/node_modules/**
+**/Debug

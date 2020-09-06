@@ -1,0 +1,22 @@
+{
+  "name": "magneto.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build:win": "pkg ./index.js --target node12-win-x64 -o ../build/win/bin/Magneto.exe",
+    "build:macos": "pkg ./index.js --target node12-macos-x64 -o ../build/macos/bin/Magneto",
+    "postinstall": "patch-package"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "patch-package": "^6.2.2",
+    "pkg": "^4.4.9"
+  },
+  "dependencies": {
+    "peerflix": "^0.39.0"
+  }
+}
