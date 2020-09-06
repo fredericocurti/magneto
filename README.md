@@ -9,11 +9,11 @@ You need VLC installed in order for this to work properly.
 ___
 ## Installation
 ### Windows Desktop Client
-To install the Windows desktop client, download and run the **MagnetoSetup.msi** file from the lastest release.
+To install the Windows desktop client, download and run the [**MagnetoSetup.msi** file from the lastest release](https://github.com/fredericocurti/magneto/releases/download/0.0.1/MagnetoSetup.msi).
 
 ### Chrome Extension
 You can either:
-- Install from [Chrome Web Store using this link](https://chrome.google.com/webstore/detail/magneto/nagfoodnoinncledhopekanlgglpcfgf)
+- Install from [**Chrome Web Store**](https://chrome.google.com/webstore/detail/magneto/nagfoodnoinncledhopekanlgglpcfgf)
 
 OR
 
