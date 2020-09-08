@@ -9,15 +9,15 @@ You need VLC installed in order for this to work properly.
 ___
 ## Installation
 ### Windows Desktop Client
-To install the Windows desktop client, download and run the **MagnetoSetup.msi** file from the lastest release.
+To install the Windows desktop client, download and run the [**MagnetoSetup.msi** file from the lastest release](https://github.com/fredericocurti/magneto/releases/download/0.0.1/MagnetoSetup.msi).
 
 ### Chrome Extension
 You can either:
-- Drag and drop the Extension folder into the *chrome://extensions* page with developer mode turned on
+- Install from [**Chrome Web Store**](https://chrome.google.com/webstore/detail/magneto/nagfoodnoinncledhopekanlgglpcfgf)
 
 OR
 
-- Wait for it to be approved on Chrome Web Store, I will share a link asap.
+- Drag and drop the Extension folder into the *chrome://extensions* page with developer mode turned on
 ___
 ## Usage
 With all prerequisites installed, using it should be as simple as right clicking on a *magnet* link on Chrome, choosing the **🧲 Stream with Magneto** option and click **Open Magneto** on the popup. This should open both a command prompt with the streaming URL and VLC.
