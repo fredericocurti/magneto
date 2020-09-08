@@ -29,3 +29,4 @@ ____
 - Thanks to [Jozef Jaroščiak
 ](https://github.com/JozefJarosciak) for the great article about custom URI schemes in native Windows apps
 - Thanks to [mafintosh](https://github.com/mafintosh) and the other peerflix contributors.
+- Thanks to [filipefborba](https://github.com/filipefborba) who helped me testing the program.
