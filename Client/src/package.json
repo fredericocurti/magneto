@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "build:win": "pkg ./index.js --target node12-win-x64 -o ../build/win/bin/Magneto.exe",
-    "build:macos": "pkg ./index.js --target node12-macos-x64 -o ../build/macos/bin/Magneto",
+    "build:win": "pkg ./index.js --target node12-win-x64 -o ../build/win/bin/Magnetojs.exe",
+    "build:macos": "pkg ./index.js --target node12-macos-x64 -o ../build/macos/bin/Magnetojs",
     "postinstall": "patch-package"
   },
   "author": "",
@@ -17,6 +17,7 @@
     "pkg": "^4.4.9"
   },
   "dependencies": {
-    "peerflix": "^0.39.0"
+    "peerflix": "^0.39.0",
+    "systray": "^1.0.5"
   }
 }
