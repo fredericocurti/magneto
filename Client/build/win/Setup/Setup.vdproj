@@ -21,14 +21,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_8DBF8341442AE348E9887EA5881E3A24"
-        "OwnerKey" = "8:_3519352AAE934B30BA12647A7708105D"
+        "MsmKey" = "8:_3E808C8B822D4A3ABF3520C166E46465"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_C930C3696B5A4B89963FFF7C595225A7"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_8DBF8341442AE348E9887EA5881E3A24"
+        "OwnerKey" = "8:_3519352AAE934B30BA12647A7708105D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -144,6 +144,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3E808C8B822D4A3ABF3520C166E46465"
+            {
+            "SourcePath" = "8:..\\bin\\Magnetojs.exe"
+            "TargetName" = "8:Magnetojs.exe"
+            "Tag" = "8:"
+            "Folder" = "8:_B520FBD7708F475AAFCD05E3DA103B27"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8DBF8341442AE348E9887EA5881E3A24"
             {
             "AssemblyRegister" = "3:1"
@@ -173,26 +193,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C930C3696B5A4B89963FFF7C595225A7"
-            {
-            "SourcePath" = "8:..\\bin\\Magnetojs.exe"
-            "TargetName" = "8:Magnetojs.exe"
-            "Tag" = "8:"
-            "Folder" = "8:_B520FBD7708F475AAFCD05E3DA103B27"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DACBBBC901074E30B47F97B2773FF186"

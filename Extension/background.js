@@ -1,10 +1,13 @@
 chrome.contextMenus.create({
     title: "Stream with Magneto",
     contexts: ["link"],  // ContextType
-    onclick: (link) => {
+    onclick: (link, tab) => {
+        console.log(link, tab)
         const { linkUrl } = link
-        if (linkUrl.startsWith("magnet:")) {
-            chrome.tabs.create({ url: `magneto://${linkUrl}` })
-        }
+        chrome.tabs.create({ 
+            url: linkUrl.startsWith("magnet:") 
+            ? `magneto://${linkUrl}` 
+            : chrome.runtime.getURL("invalid_link.html")
+        })
     }
-});
+})

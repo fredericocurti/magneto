@@ -11,6 +11,8 @@ let link
 let output
 let systray
 
+const releaseTrayBin = path.join(__dirname, "node_modules/systray/traybin/tray_windows_release.exe")
+
 try {
     link = process.argv[2].replace("magneto://magnet:/?", "magnet:?");
 } catch (error) {
