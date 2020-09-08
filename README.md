@@ -9,7 +9,7 @@ You need VLC installed in order for this to work properly.
 ___
 ## Installation
 ### Windows Desktop Client
-To install the Windows desktop client, download and run the [**MagnetoSetup.msi** file from the lastest release](https://github.com/fredericocurti/magneto/releases/download/0.0.1/MagnetoSetup.msi).
+To install the Windows desktop client, download and run the [**MagnetoSetup.msi** file from the lastest release](https://github.com/fredericocurti/magneto/releases/download/v1.0.1/MagnetoSetup.msi).
 
 ### Chrome Extension
 You can either:
