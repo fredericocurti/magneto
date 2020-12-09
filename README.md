@@ -1,6 +1,6 @@
 # 🧲 Magneto 
 This is a little utility program to make streaming from magnet links into VLC easier. It is composed of **two** parts:
-- **A Windows program** that will intercept the *magneto://* custom app protocol and launch peerflix
+- **A Windows/Mac Desktop Client** that will intercept the *magneto://* custom app protocol and launch peerflix
 - A **Chrome extension** that will add a context menu entry on links to forward a magnet url to the desktop application.
 
 ## Dependencies
@@ -8,8 +8,12 @@ You need VLC installed in order for this to work properly.
 - [VLC Media Player](https://www.videolan.org/)
 ___
 ## Installation
+
+### macOS Desktop Client
+To install the macOS desktop client, download [**MagnetoMacOS.app.zip** from the lastest release](https://github.com/fredericocurti/magneto/releases/download/v1.0.1/MagnetoSetup.msi), unzip it and move MagnetoMacOS.app to Applications folder.
+
 ### Windows Desktop Client
-To install the Windows desktop client, download and run the [**MagnetoSetup.msi** file from the lastest release](https://github.com/fredericocurti/magneto/releases/download/v1.0.1/MagnetoSetup.msi).
+To install the Windows desktop client, download and run [**MagnetoSetup.msi** file from the lastest release](https://github.com/fredericocurti/magneto/releases/download/v1.0.1/MagnetoSetup.msi).
 
 ### Chrome Extension
 You can either:
