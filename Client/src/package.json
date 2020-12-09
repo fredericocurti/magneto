@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "build:win": "pkg package.json --target node12-win-x64 -o ../build/win/bin/Magnetojs.exe",
-    "build:macos": "pkg package.json --target node12-macos-x64 -o ../build/macos/bin/Magnetojs",
+    "build:macos": "pkg package.json --target node12-macos-x64 -o ../build/mac/bin/Magnetojs",
     "postinstall": "patch-package"
   },
   "author": "fredericocurti",

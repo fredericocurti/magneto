@@ -9,12 +9,16 @@ const logo = fs.readFileSync(path.join(__dirname, "icon.ico"), { encoding: 'base
 
 let link
 let output
-let systray
+
+/** @type {import("child_process").ChildProcess} */
+let child
 
 const releaseTrayBin = path.join(__dirname, "node_modules/systray/traybin/tray_windows_release.exe")
+const releaseTrayBinDarwin = path.join(__dirname, "node_modules/systray/traybin/tray_darwin_release")
 
 try {
     link = process.argv[2].replace("magneto://magnet:/?", "magnet:?");
+    link = process.argv[2].replace("magneto://magnet:?", "magnet:?")
 } catch (error) {
     console.log("Please run Magneto from the Chrome extension")
     process.exit(1)
@@ -22,44 +26,35 @@ try {
 
 const appPath = path.join(__dirname , "node_modules/peerflix/app.js")
 
-if (process.platform === "win32") {
-    systray = new SysTray({
-        menu: {
-            icon: logo,
-            title: "Streaming with Magneto",
-            tooltip: "Magneto",
-            items: [{
-                title: "Loading",
-                tooltip: "",
-                checked: false,
-                enabled: false
-            },
-            {
-                title: "",
-                tooltip: "",
-                checked: false,
-                enabled: false
-            },
-            {
-                title: "Exit",
-                tooltip: "bb",
-                checked: false,
-                enabled: true
-            }]
+const systray = new SysTray({
+    menu: {
+        icon: logo,
+        title: process.platform === "darwin" ? "" : "Streaming with Magneto",
+        tooltip: "Magneto",
+        items: [{
+            title: "Loading",
+            tooltip: "",
+            checked: false,
+            enabled: false
         },
-        debug: false,
-        copyDir: true
-    })
+        {
+            title: "",
+            tooltip: "",
+            checked: false,
+            enabled: false
+        },
+        {
+            title: "Exit",
+            tooltip: "bb",
+            checked: false,
+            enabled: true
+        }]
+    },
+    debug: false,
+    copyDir: true
+})
 
-    systray.onClick(action => {
-        if (action.seq_id === 2) {
-            systray.kill()
-            process.exit(0)
-        }
-    })
-}
-
-const child = child_process.fork(
+child = child_process.fork(
     appPath,
     [link, "--vlc", "--", "--no-video-on-top"],
     { stdio: "pipe", silent: true, detached: true }
@@ -68,7 +63,16 @@ const child = child_process.fork(
 child.addListener("close", (code) => {
     if (systray) {
         systray.kill()
-        process.exit(0)
+    }
+    process.exit(0)
+})
+
+systray.onClick(action => {
+    if (action.seq_id === 2) {
+        if (child) {
+            child.kill("SIGTERM")
+        }
+        systray.kill()
     }
 })
 
@@ -98,9 +102,13 @@ child.stdout.addListener("data", (data) => {
         systray.sendAction({
             type: 'update-item',
             item: {
-                title: fileNameAndDownloadRate
+                title: capitalizeFirstLetter(fileNameAndDownloadRate)
             },
             seq_id: 1
         })
     }
 })
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
