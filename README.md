@@ -10,10 +10,10 @@ ___
 ## Installation
 
 ### macOS Desktop Client
-To install the macOS desktop client, download [**MagnetoMacOS.app.zip** from the lastest release](https://github.com/fredericocurti/magneto/releases/download/v1.0.1/MagnetoSetup.msi), unzip it and move MagnetoMacOS.app to Applications folder.
+To install the macOS desktop client, download [**MagnetoMacOS.app.zip** from the lastest release](https://github.com/fredericocurti/magneto/releases/tag/v1.1.0), unzip it and move MagnetoMacOS.app to Applications folder.
 
 ### Windows Desktop Client
-To install the Windows desktop client, download and run [**MagnetoSetup.msi** file from the lastest release](https://github.com/fredericocurti/magneto/releases/download/v1.0.1/MagnetoSetup.msi).
+To install the Windows desktop client, download and run [**MagnetoSetup.msi** file from the lastest release](https://github.com/fredericocurti/magneto/releases/tag/v1.1.0).
 
 ### Chrome Extension
 You can either:
