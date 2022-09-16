@@ -7,6 +7,11 @@ This is a little utility program to make streaming from magnet links into VLC ea
 You need VLC installed in order for this to work properly.
 - [VLC Media Player](https://www.videolan.org/)
 ___
+
+### Updates (Sep 2022):
+- **Version 1.2.0** brings M1 (arm64) support, and is out now with performance and reliabilty improvements
+
+
 ## Installation
 
 ### macOS Desktop Client
