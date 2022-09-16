@@ -1,0 +1,17 @@
+diff --git a/node_modules/peerflix/app.js b/node_modules/peerflix/app.js
+index 86c5c7a..271376b 100644
+--- a/node_modules/peerflix/app.js
++++ b/node_modules/peerflix/app.js
+@@ -246,7 +246,11 @@ var ontorrent = function (torrent) {
+       var runVLC = function (regItem) {
+         VLC_ARGS = VLC_ARGS.split(' ')
+         VLC_ARGS.unshift(localHref)
+-        proc.execFile(regItem.value + path.sep + 'vlc.exe', VLC_ARGS)
++        var child = proc.execFile(regItem.value + path.sep + 'vlc.exe', VLC_ARGS)
++        child.addListener("close", (code) => {
++          console.log("child close event emmited", code)
++          process.exit(0)
++        })
+       }
+       registry('HKLM', '\\Software\\VideoLAN\\VLC', 'InstallDir', function (err, regItem) {
+         if (err) {
