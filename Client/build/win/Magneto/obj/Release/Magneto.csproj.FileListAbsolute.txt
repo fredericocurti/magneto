@@ -1,6 +1,0 @@
-C:\Users\frede\source\repos\Magneto\Client\build\win\Magneto\bin\Release\Magneto.exe.config
-C:\Users\frede\source\repos\Magneto\Client\build\win\Magneto\bin\Release\Magneto.exe
-C:\Users\frede\source\repos\Magneto\Client\build\win\Magneto\bin\Release\Magneto.pdb
-C:\Users\frede\source\repos\Magneto\Client\build\win\Magneto\obj\Release\Magneto.csproj.CoreCompileInputs.cache
-C:\Users\frede\source\repos\Magneto\Client\build\win\Magneto\obj\Release\Magneto.exe
-C:\Users\frede\source\repos\Magneto\Client\build\win\Magneto\obj\Release\Magneto.pdb
